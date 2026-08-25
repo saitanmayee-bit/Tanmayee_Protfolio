@@ -4,7 +4,8 @@ function toggleTheme() {
     if (html.getAttribute('data-theme') === 'light') {
         html.removeAttribute('data-theme');
         icon.className = 'fas fa-sun';
-    } else {
+    } 
+    else {
         html.setAttribute('data-theme', 'light');
         icon.className = 'fas fa-moon';
     }
@@ -114,7 +115,8 @@ window.addEventListener('scroll', () => {
     if (currentScroll > 100) {
         navbar.style.padding = '0.75rem 5%';
         navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-    } else {
+    } 
+    else {
         navbar.style.padding = '1rem 5%';
         navbar.style.boxShadow = 'none';
     }
@@ -128,3 +130,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 });
+
