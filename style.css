@@ -254,6 +254,51 @@ section { padding: 6rem 5%; max-width: 1200px; margin: 0 auto; }
     color: var(--primary); border-radius: 6px;
     font-size: 0.8rem; font-weight: 500;
 }
+/* =========================
+   PROJECT BUTTONS
+========================= */
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0 2rem 2rem;
+}
+.project-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.code-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+.code-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+.live-btn {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+}
+.live-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(14, 165, 233, 0.25);
+}
+.project-btn i {
+    font-size: 0.9rem;
+}
 
 .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
 .skill-category {
